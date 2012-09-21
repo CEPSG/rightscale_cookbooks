@@ -18,6 +18,7 @@ cloud       = node[:db][:dump][:storage_account_provider]
 # Execute the command to create the dumpfile
 db node[:db][:data_dir] do
   dumpfile dumpfilepath
+#Vijay is testing chef
   db_name databasename
   action :generate_dump_file
 end
